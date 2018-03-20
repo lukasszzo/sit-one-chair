@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    font-family: Raleway, Arial, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1040px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    background: nth($colors, 2);
+    border: 1px solid nth($colors, 2);
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s opacity;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0 10px 3px nth($colors, 6);
+        transition: 0.5s all;
+    }
+}
+
+.title-border {
+    position: relative;
+    padding-bottom: 1px;
+    &:after {
+        width: 150px;
+        height: 6px;
+        bottom: 15px;
+        left: 10px;
+        background: nth($colors, 2);
+        position: absolute;
+        content: '';
+    }
+}
+
+.title-border-big {
+    font-size: 25px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    &:after {
+        width: 296px;
+        height: 8px;
+        position: absolute;
+        top: 49px;
+        left: 38px;
+    }
+}
+
+@import "headermenu";
+@import "slider";
+@import "boxessection";
+@import "pricessection";
+@import "calculator";
+@import "contactsection";
+@import "footer";
